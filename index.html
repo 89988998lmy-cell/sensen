@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>森森的翻译网站 - DeepSeek翻译</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>森森的翻译网站</h1>
+            <p>基于DeepSeek API</p>
+        </header>
+        
+        <main>
+            <div class="translation-box">
+                <div class="input-section">
+                    <div class="language-selector">
+                        <select id="sourceLang">
+                            <option value="zh">中文</option>
+                            <option value="en">英语</option>
+                            <option value="ru">俄语</option>
+                            <option value="ar">阿拉伯语</option>
+                            <option value="fr">法语</option>
+                            <option value="es">西班牙语</option>
+                            <option value="pt">葡萄牙语</option>
+                            <option value="de">德语</option>
+                            <option value="ja">日语</option>
+                            <option value="ko">韩语</option>
+                            <option value="tr">土耳其语</option>
+                            <option value="it">意大利语</option>
+                            <option value="id">印尼语</option>
+                            <option value="hi">印地语</option>
+                            <option value="bn">孟加拉语</option>
+                            <option value="ur">乌尔都语</option>
+                            <option value="th">泰语</option>
+                            <option value="vi">越南语</option>
+                            <option value="ms">马来语</option>
+                            <option value="fa">波斯语</option>
+                        </select>
+                        <button id="swapBtn" class="swap-btn">⇄</button>
+                        <select id="targetLang">
+                            <option value="zh">中文</option>
+                            <option value="en">英语</option>
+                            <option value="ru">俄语</option>
+                            <option value="ar">阿拉伯语</option>
+                            <option value="fr">法语</option>
+                            <option value="es">西班牙语</option>
+                            <option value="pt">葡萄牙语</option>
+                            <option value="de">德语</option>
+                            <option value="ja">日语</option>
+                            <option value="ko">韩语</option>
+                            <option value="tr">土耳其语</option>
+                            <option value="it">意大利语</option>
+                            <option value="id">印尼语</option>
+                            <option value="hi">印地语</option>
+                            <option value="bn">孟加拉语</option>
+                            <option value="ur">乌尔都语</option>
+                            <option value="th">泰语</option>
+                            <option value="vi">越南语</option>
+                            <option value="ms">马来语</option>
+                            <option value="fa">波斯语</option>
+                        </select>
+                    </div>
+                    
+                    <div style="position: relative;">
+                        <textarea 
+                            id="inputText" 
+                            placeholder="请输入要翻译的文本..." 
+                            rows="10"
+                        ></textarea>
+                        <button 
+                            id="voiceBtn" 
+                            class="voice-btn"
+                            title="语音输入"
+                        >
+                            🎤
+                        </button>
+                    </div>
+                    
+                    <div class="input-actions">
+                        <button id="clearBtn">清空</button>
+                        <button id="translateBtn" class="translate-btn">翻译</button>
+                    </div>
+                </div>
+                
+                <div class="output-section">
+                    <h3>翻译结果</h3>
+                    <div id="outputText" class="output-text"></div>
+                    <div class="output-actions">
+                        <button id="copyBtn">复制结果</button>
+                    </div>
+                </div>
+            </div>
+        </main>
+        
+        <footer>
+            <p>© 2025 森森的翻译网站</p>
+        </footer>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
